@@ -19165,11 +19165,11 @@
 
             },
             "g1992": {
-                "Olympic_Ranking": "none",
-                "Total": 0,
-                "Gold": 0,
-                "Silver": 0,
-                "Bronze": 0
+                "Olympic_Ranking": 1,
+                "Total": 112,
+                "Gold": 45,
+                "Silver": 38,
+                "Bronze": 29
 
             }
           },

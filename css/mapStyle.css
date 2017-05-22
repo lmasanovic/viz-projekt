@@ -1,0 +1,84 @@
+#barchart path {
+			stroke: steelblue;
+			stroke-width: 2;
+			fill: none;}
+#barchart .axis path,
+#barchart .axis line {
+	fill: none;
+	stroke: grey;
+	stroke-width: 2;
+	shape-rendering: crispEdges;}
+
+tip.tooltip {
+	    position: absolute;
+	    text-align: center;
+	    width: 60px;
+	    height: 28px;
+	    padding: 2px;
+	    font: 12px sans-serif;
+	    background: lightsteelblue;
+	    border: 0px;
+	    border-radius: 8px;
+	    pointer-events: none;
+	}
+
+.country:hover{
+    stroke: black;
+    stroke-width: .3px;
+  }
+  #container {
+		float: left;
+    margin:10px;
+    padding:20px;
+    border:2px solid #d0d0d0;
+    border-radius: 5px;
+		width: 55%;
+  }
+  .hidden {
+    display: none;
+  }
+  div.tooltip {
+    color: #222;
+    background: #fff;
+    padding: .5em;
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 0px #a6a6a6;
+    opacity: 0.9;
+    position: absolute;
+  }
+
+g.legend {
+	float:left;
+	display: inline-block;
+}
+/*Kontejner*/
+.cont-style {
+	margin: 10px;
+}
+.logo {
+	width: 150px;
+	height: 50px;
+	display: inline-block;
+}
+h2 {
+	display: inline-block;
+}
+.center {
+	margin: 0 auto;
+}
+.inline {
+	display: inline-block;
+}
+.margin-l-120 {
+	margin-left: 120px;
+}
+.margin-r-10 {
+	margin-right: 10px;
+}
+.padding-l-55 {
+	padding-left: 55px;
+}
+.margin-t-20 {
+	margin-top: 20px;
+}

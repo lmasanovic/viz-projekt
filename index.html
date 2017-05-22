@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Olympic Games 1992-2016</title>
+<head>
+  <script src="js/d3.min.js"></script>
+  <script src="js/topojson.v1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mapStyle.css">
+  <link rel="stylesheet" href="css/sliderStyle.css">
+</head>
+<body>
+
+    <div class="row">
+      <div class="cont-style">
+        <div id="controll">
+          <div class="col-md-3 ">
+            <img src="olimp.png" class="img-responsive logo margin-t-20 margin-l-10">
+          </div>
+          <div class="col-md-9 padding-l-55">
+                <h2 class="naslov margin-l-10 ">Summer Olympic Games - </h2>
+                <h2 id="textInput">1992</h2><br>
+                <h4 class="inline margin-l-120 " id="igre">Spain, Barcelona</h4>
+
+
+          </div>
+          <div class="col-md-3">
+            <p class="inline margin-l-10">Color by:</p>
+            <input id = "poMedaljama" type="radio" name="ranking" value="medals" checked>Medals
+            <input id = "poRankingu" type="radio" name="ranking" value="ranking">Ranking
+          </div>
+          <div class="col-md-9">
+          <input class="inline" id="inputLinija" type="range" name="rangeInput" min="1992" max="2016" step ="4" value="1992" onchange="updateTextInput(this.value);">
+            <button id="playAnimation"  class="btn btn-default"><span class="glyphicon glyphicon-play"></span> </button>
+            <button id="stopAnimation" class="btn btn-default"><span class="glyphicon glyphicon-stop"></span></button>
+            <input class="inline" type="checkbox" id="checkBox">Keep barchart
+          </div>
+
+          </div>
+          <!--
+
+          <button class="inline btn"  type="button" name="button">Play</button>
+          <button class="inline btn" id="stopAnimation" type="button" name="button">Stop</button>
+          <span>Number of countries with 1 medal or more: </span><p id="brojVise"></p>
+           -->
+        </div>
+      </div>
+
+    </div>
+
+  <div id="container"></div>
+  <div id="barchart"></div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/mainScript.js"></script>
+</body>
+</html>

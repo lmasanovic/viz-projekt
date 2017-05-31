@@ -57,8 +57,7 @@ g.legend {
 	margin: 10px;
 }
 .logo {
-	width: 150px;
-	height: 50px;
+	max-width: 150px;
 	display: inline-block;
 }
 h2 {
@@ -81,4 +80,7 @@ h2 {
 }
 .margin-t-20 {
 	margin-top: 20px;
+}
+.margin-l-10 {
+	margin-left: 10px;
 }

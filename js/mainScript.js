@@ -24,7 +24,7 @@ var color = d3.scale.linear()
 .domain([0,121])
 .clamp(true)
 .range(["#ccccff","#1a1aff"]);
-
+ //
 var color1 = d3.scale.linear()
 .domain([0,90])
 .clamp(true)
@@ -35,7 +35,7 @@ var tooltip = d3.select("#container").append("div").attr("class", "tooltip hidde
 //za bar chart
 var medalje = ["Gold", "Silver", "Bronze"];
 var bardata = [0];
-var height2 = 150,	width2 = 200,	barPadding = 2,	barwidth = width2/7-barPadding,	margin = {top: 50, bottom: 80, left:80, right: 50};
+var height2 = 250,	width2 = 250,	barPadding = 2,	barwidth = width2/7-barPadding,	margin = {top: 50, bottom: 80, left:80, right: 50};
 var interval;
 
 var tip = d3.select("body").append("div")
@@ -351,7 +351,7 @@ function crtaj_graf(naslov,godinag){
     .rangeBands([0, width2]);
 
     var yScale = d3.scale.linear()
-    .domain([0, d3.max(bardata, function(d) {return d ;})])
+    .domain([0, 50])
     .rangeRound([height2,0]);
 
     var xAxis = d3.svg.axis()
@@ -413,7 +413,7 @@ function crtaj_graf(naslov,godinag){
     .enter()
     .append("rect")
     .attr('x', function (d,i){
-    	return xScale(i) +20;
+    	return xScale(i) +25;
     })
     .attr('y', height2)
     .attr("height", 0)
